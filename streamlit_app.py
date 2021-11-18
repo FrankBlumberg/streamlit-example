@@ -33,19 +33,3 @@ with st.echo(code_location='below'):
         y = radius * math.sin(angle)
         data.append(Point(x, y))
         
-        
- st.progress(progress_variable_1_to_100)
-st.spinner()
->>> with st.spinner(text='In progress'):
->>>     time.sleep(5)
->>>     st.success('Done')
-st.balloons()
-st.error('Error message')
-st.warning('Warning message')
-st.info('Info message')
-st.success('Success message')
-st.exception(e)
-
-    st.altair_chart(alt.Chart(pd.DataFrame(data), height=500, width=500)
-        .mark_circle(color='#0068c9', opacity=0.5)
-        .encode(x='x:Q', y='y:Q'))
